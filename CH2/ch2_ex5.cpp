@@ -1,16 +1,17 @@
 #include <iostream>
 using namespace std;
-void exchage(int x);
+int exchage(int x);
 
 int main(){
 	cout << "Please enter a Celsius valus: ";
-	int celsius_valus;
+	double celsius_valus;
 	cin >> celsius_valus;
-	exchage(celsius_valus);
+	double exchange_to_fahrenheit_valus = exchage(celsius_valus);
+	cout << celsius_valus << "degrees Celsius is " <<  << " degrees Fahrenheit.";
 	
 	return 0;
 }
 
-void exchage(int x){
-	cout << x << "degrees Celsius is " << x*1.8+32 << " degrees Fahrenheit.";
+int exchage(int x){
+	return x*1.8+32;
 }
