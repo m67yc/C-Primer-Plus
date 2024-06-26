@@ -1,16 +1,17 @@
 #include <iostream>
 using namespace std;
-void exchage(double x);
+int exchage(double x);
 
 int main(){
 	cout << "Enter the number of light years: ";
 	double num_LightYear;
 	cin >> num_LightYear;
-	exchage(num_LightYear);
+	double exchange_to_astronomical_units = exchage(num_LightYear);
+	cout << num_LightYear << " light years " << exchange_to_astronomical_units << " astronomical units.";
 	
 	return 0;
 }
 
-void exchage(double x){
-	cout << x << " light years " << x*63240 << " astronomical units.";
+int exchage(double x){
+	return x*63240;
 }
