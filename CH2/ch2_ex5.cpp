@@ -7,7 +7,7 @@ int main(){
 	double celsius_valus;
 	cin >> celsius_valus;
 	double exchange_to_fahrenheit_valus = exchage(celsius_valus);
-	cout << celsius_valus << "degrees Celsius is " <<  << " degrees Fahrenheit.";
+	cout << celsius_valus << " degrees Celsius is " << exchange_to_fahrenheit_valus << " degrees Fahrenheit.";
 	
 	return 0;
 }
