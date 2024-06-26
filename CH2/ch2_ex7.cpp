@@ -3,11 +3,11 @@ using namespace std;
 void exchage(int x,int y);
 
 int main(){
+	
+	int hour,min;
 	cout << "Enter the number of hour: ";
-	int hour;
 	cin >> hour;
 	cout << "Enter the number of minutes: ";
-	int min;
 	cin >> min;
 	exchage(hour,min);
 	
