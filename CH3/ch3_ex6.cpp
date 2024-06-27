@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 	
-	long double distance_mile,gasoline_quantity_gallon,distance_km,gasoline_quantity_L,fuel_consumption_per_100_kilometers;
+	long double distance_mile,gasoline_quantity_gallon,gallon_per_fuel_consumption;
 	
 	cout << "Enter the distance in mile: ";
 	cin >> distance_mile;
