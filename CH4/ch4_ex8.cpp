@@ -6,16 +6,21 @@ struct pizza_{
 	
 	string name;
 	int d;
-	float weight;
+	float weight;   
 	
 };
+ 
+//int short long float double char 
+//string(char[]) array struct pointer 
+
+
 
 int main(){
 	
 	pizza_ * pizza = new pizza_;
 	
 	cout << "Enter the name of company:";
-	cin >> (*pizza).name;
+	cin >> pizza->name;  
 	cout << "Enter the diameter of pizza: ";
 	cin >> (*pizza).d;
 	cout << "Enter the weight of pizza: ";
