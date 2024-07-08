@@ -7,9 +7,9 @@ int main(){
     string name, dessert;
 
     cout << "Enter your name:\n";
-    cin.getline(name,100);
+    getline(cin, name);
     cout << "Enter your favorite dessert:\n";
-    cin.getline(dessert,100);
+    getline(cin, dessert);
     cout << "I have some delicious " << dessert;
     cout << " for you, " << name << ".\n";
     
