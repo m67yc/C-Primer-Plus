@@ -15,7 +15,7 @@ int main(){
 	pizza pizza;
 	
 	cout "Enter the name of company:";
-	cin >> pizza.name;
+	getline(cin, pizza.name);
 	cout "Enter the diameter of pizza: ";
 	cin >> pizza.d;
 	cout "Enter the weight of pizza: ";
