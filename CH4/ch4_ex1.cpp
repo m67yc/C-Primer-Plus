@@ -4,13 +4,14 @@ using namespace std;
 
 int main(){
 	
-	string first_name, last_name;
+	int ArSize = 100;
+	char first_name[ArSize], last_name[ArSize];
 	char grade;
 	int age;
 	cout << "What is your first name?";
-	cin >> first_name;
+	cin.getline(first_name,ArSize);
 	cout << "What is your last name?";
-	cin >> last_name;
+	cin.getline(last_name,ArSize);
 	cout << "What letter grade do you deserve?";
 	cin >> grade;
 	cout << "What is your age?";
