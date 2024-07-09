@@ -10,7 +10,7 @@ int main(){
 	cin >> min;
 	cout << "the max:";
 	cin >> max;
-	for(int i = min;i <= 9;i++){
+	for(int i = min;i <= max;i++){
 		total += i;
 	}
 	cout << total;
