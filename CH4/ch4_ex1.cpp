@@ -1,10 +1,10 @@
 #include<iostream>
 #include<cstring>
 using namespace std;
+const int ArSize = 100;
 
 int main(){
 	
-	int ArSize = 100;
 	char first_name[ArSize], last_name[ArSize];
 	char grade;
 	int age;
