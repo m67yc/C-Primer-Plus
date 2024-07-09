@@ -21,6 +21,7 @@ int main(){
 		}
 	}
 	cout << "The total: " << total;
+	
 	return 0;
 	
 }
