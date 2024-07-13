@@ -1,0 +1,25 @@
+if(判斷1){
+  //正確時進行
+}
+else if(判斷2){
+  //判斷1錯誤，判斷2正確時進行
+}
+else{
+  //判斷1 和 判斷2 錯誤時進行
+}
+
+
+
+//swithch的用法
+
+int choose || char choose;
+cin >> choose;
+switch(choose){
+case 1 || 'c' : cout << "A maple is a carnivore.";
+			          break;
+case 2 || 'p' : cout << "A maple is a pianist.";
+			          break;
+case 3 || 'g' : cout << "A maple is a game.";//如果選擇是3 或者 'g'時進行這個
+			          break; 
+default : cout << "Please enter a c, p, t, or g: "; //不是上面的選擇就進行這個
+}
