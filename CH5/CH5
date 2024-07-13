@@ -16,3 +16,7 @@ int i = 0;
 while(i < 5){
   i++;
 }
+
+
+//二维数组
+int variable_name[3][10] = {{},{},{}}; //variable_name有三格，每格裏有十格
