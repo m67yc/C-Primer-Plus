@@ -1,1 +1,33 @@
+//基本格式
+#include <iostream>
+using namespace std;
 
+int main(){
+
+  return 0;
+
+}
+
+
+cout << ;//輸出
+cin >> ;//輸入
+cout << endl << "\n";//隔閡
+
+
+//function格式
+void function_name():
+void function_name(){
+  //...
+}
+
+int function_name();
+int function_name(){
+  //...
+  return variable_name;
+}
+
+
+//labrary_cmath
+#include <cmath>
+sqrt(numble);//平方根
+pow(numble1,numble2);//numble1 的 numble2 次方
