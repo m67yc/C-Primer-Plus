@@ -17,7 +17,6 @@ int main(){
   //...
   function_name variable_name2{};//已給内存  //variable_name2.variable_name1
   
-  function_name * variable_name2 = new function_name[numble];//array的用法  //(*variable_name2[3]）.variable_name1 || 
-
-  //snack[1] = *(snack+1)
+  function_name * variable_name2 = new function_name[numble];//array的用法
+  //(*variable_name2[3]).variable_name1 || (variable_name2+1)->variable_name1 || (*(variable_name2+1)).variable_name1
 }
