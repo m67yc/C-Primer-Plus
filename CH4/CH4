@@ -10,10 +10,13 @@ pointer( * ) //用法: int * ||char * 等
 
 //
 struct function_name{
-  //int等等
+  //int variable_name1;等等
 };
 
 int main(){
   //...
-  function_name 
+  function_name variable_name2{};//已給内存
+  function_name * variable_name2 = new function_name[numble];//array的用法 //*variable_name2[3].variable_name1
+  *variable_name2
+  
 }
