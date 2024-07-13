@@ -1,0 +1,19 @@
+int short long ;
+float double ;//小數
+char ;//字符
+
+
+string(char[]) ;//字符串
+array ;//數組
+pointer( * ) //用法: int * ||char * 等
+
+
+//
+struct function_name{
+  //int等等
+};
+
+int main(){
+  //...
+  function_name 
+}
