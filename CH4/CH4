@@ -8,7 +8,7 @@ array ;//數組
 pointer( * ) //用法: int * ||char * 等
 
 
-//
+//struct的用法
 struct function_name{
   //int variable_name1;等等
 };
