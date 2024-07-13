@@ -23,3 +23,23 @@ case 3 || 'g' : cout << "A maple is a game.";//如果選擇是3 或者 'g'時進
 			          break; 
 default : cout << "Please enter a c, p, t, or g: "; //不是上面的選擇就進行這個
 }
+
+
+
+//fstream_library
+
+#include <fstream>
+
+int main(){
+  ifstream inFile; //設定名
+  inFile.open("abc.txt"); //開名爲abc.txt的文件
+
+  //進入文件
+  char ch;
+  inFile >> ch;
+  while(inFile.good()){
+	inFile >> ch;
+  }
+
+  inFile.close(); //關閉文件
+}
