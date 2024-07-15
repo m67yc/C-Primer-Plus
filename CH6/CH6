@@ -36,7 +36,7 @@ int main(){
 
   //進入文件
   char ch;
-  inFile >> ch;
+  inFile >> ch;//把輸入ch裏
   while(inFile.good()){
 	inFile >> ch;
   }
