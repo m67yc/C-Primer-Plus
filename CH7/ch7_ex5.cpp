@@ -1,34 +1,29 @@
 #include<iostream>
 using namespace std;
 
-void argument(int);
+long argument(int);
 
 int main(){
 	
 	int num;
+	long ans;
 	
-	cout << "Enter a number that you want to know its argument.\n";
+	cout << "Enter a number that you want to know its argument: ";
+	
 	while(cin >> num){
-		argument(num);
+		ans = argument(num);
+		cout << num << "! = " << ans << endl;
+		cout << "Enter a number that you want to know its argument: ";
 	}
 	
 	return 0;
 }
 
-void argument(int i){
-	
-	cout << i << ": ";
-	
-	int total = 1;
+long argument(int i){
 	
 	if(i == 0)
-		i=1;
+		return 1;
 	
-	while(i > 0){
-		total *= i;
-		i--;
-	}
-		
-	cout << total << endl;
+	return i*argument(i-1);
 	
 }
