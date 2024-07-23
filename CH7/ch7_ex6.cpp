@@ -10,7 +10,6 @@ int main(){
 	
 	const int max = 10;
 	double arr[max] = {0};
-	int t;
 	
 	int memory = Fill_array(arr, max);
 	Show_array(arr, memory);
@@ -21,21 +20,21 @@ int main(){
 	Reverse_array(arr, memory);
 	Show_array(arr, memory);
 	
+	
 	return 0;
 }
 
 int Fill_array(double num[], int time){
 	
-	int i = 0;
-
+	int i;
 	cout << "Enter a number: ";
-	while(i < time){
-		if(cin >> num[i])
-			cout << "Enter a number: ";
-		else
-			break;
+	
+	while(cin >> num[i] && i < time){
+		cout << "Enter a number: ";
 		i++;
 	}
+	cin.clear();
+	cin.get();
 	
 	return i;
 }
@@ -55,7 +54,8 @@ void Reverse_array(double num[], int time){
 	cout << "\nEnter the scope that you want to reverses(min to max): \n";
 	cin >> n;
 	cin >> m;
-	while((m-n)%2 != 1){
+		
+	while(n > time-1 || m > time-1){
 		cout << "\nEnter the scope that you want to reverses(min to max): \n";
 		cin >> n;
 		cin >> m;
