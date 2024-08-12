@@ -42,13 +42,9 @@ int getinfo(student pa[], int n){
 	for(num = 0;num < n;num++){
 		cout << "Enter your fullname: ";
 		cin >> pa[num].fullname;
-		cout << "Enter your hobby: ";
 		cin >> pa[num].hobby;
 		cout << "Enter your level: ";
 		cin >> pa[num].ooplevel;
-		
-		if(sizeof(pa[num].fullname) <= 1 || sizeof(pa[num].hobby) <= 1)
-			break;
 	}
 
 	return num;
@@ -63,12 +59,14 @@ void display1(student st){
 
 void display2(const student* ps){
 	
-	cout << "The hobby and level of " << ps->fullname << " are " << ps->hobby << " and " << ps->ooplevel << endl;
+	cout << "The hobby and level of " << &ps->fullname << " are " << &ps->hobby << " and " << &ps->ooplevel << endl;
 	
 }
 
 void display3(const student pa[], int n){
 	
-	
+	for(int i = 0;i < n;i++){
+		cout << "The hobby and level of " << (pa[i]).fullname << " are " << (pa[i]).hobby << " and " << (pa[i]).ooplevel << endl;
+	}
 	
 }
