@@ -1,1 +1,17 @@
+function:
 
+-(data type) function_name( (set a variable) ){...}
+-(function_name)(value);
+
+-数组:
+  void sum(char arr[], int n){...}
+  sum("asd",4);
+
+-二维数组:
+  void function_name(int array[][4], int size);
+  int arr[3][4];
+  function_name(arr,3);
+
+-结构:
+  struct strt_name{...]
+  void function_name(strt_name variable){...}
