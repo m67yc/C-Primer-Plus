@@ -1,3 +1,4 @@
 template <typename T / class T> //T可视为如何data type (吧?
 
-
+void function_name(string , int time = 1){...}
+function_name("1234");  //function_name里的time没有提供，所以指定为原设的数———1
